@@ -28,7 +28,7 @@ def list_groups():
     groups = Group.query.all()
 
     return render_template('admin/groups/groups.html',
-                           groups=groups, title="Csoport")
+                           groups=groups, title="Csoportok")
 
 
 @admin.route('/groups/add', methods=['GET', 'POST'])
