@@ -1,5 +1,6 @@
 alembic
 Click
+cryptography
 dominate
 eggs
 entrypoints
