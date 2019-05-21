@@ -11,8 +11,9 @@ class RegistrationForm(FlaskForm):
     """
     email = StringField('Email', validators=[DataRequired(), Email()])
     username = StringField('Felhasználónév', validators=[DataRequired()])
-    first_name = StringField('Keresztnév', validators=[DataRequired()])
     last_name = StringField('Vezetéknév', validators=[DataRequired()])
+    first_name = StringField('Keresztnév', validators=[DataRequired()])
+    #last_name = StringField('Vezetéknév', validators=[DataRequired()])
     password = PasswordField('Jelszó', validators=[
                                         DataRequired(),
                                         EqualTo('confirm_password')
